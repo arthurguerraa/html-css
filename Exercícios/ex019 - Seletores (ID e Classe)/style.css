@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id = em CSS é #
+    ID é individual de cada elemento mesmo que seja do mesmo tipo
+    As configurações do ID sobrepõem as da CLASS
+    Pode ter um ID igual desde que seja em outra página HTML
+
+    em HTML é class = em CSS .
+    CLASS pode ter vários elementos
+    Dê o nome para classe de acordo com a funcionalidade dela
+*/
+
+body{
+    background-color: rgb(185,103,255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(5,255,161);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(1,205,254);
+    color: white;
+}
+
+h2{
+    color: rgb(5,255,161);
+}
+
+.basico{
+    color: green;
+    font-weight: bold;
+    
+}
+
+.intermediario{
+    color: yellow;
+    font-weight: bold;
+}
+
+.avancado{
+    color: red;
+    font-weight: bold;
+}
+
+.destaque{
+    background-color: rgb(255,251,150);
+}

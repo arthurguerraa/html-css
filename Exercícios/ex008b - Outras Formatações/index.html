@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    
+    <h1>Outras formatações / Pré Formatação</h1>
+    
+    <h2>Código Fonte</h2>
+
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p> <!-- A tag "code" serve pra dar o mesmo espaço lateral entre as letras-->
+
+    <p><pre>
+        <code>
+num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR)
+    else:
+        print(f'O número {num} é ÍMPAR)
+    print('Fim do programa') <!--Selecionar tudo e pressionar SHIFT depois apertar TAB pra arrumar jogar o código pro lado esquerdo-->
+    <!--Selecionar tudo e apertar TAB pra jogar o código pro lado direito-->
+        </code>
+    </pre></p> <!--A tag "pre" serve pra dar uma formatação no texto do jeito que ele está escrito-->
+
+    <h2>Citações Simples</h2>
+
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p> <!-- A tag "q" significa citação (simples)-->
+
+    <h2>Citações Completas</h2>
+
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y">
+        A diferença entre os elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote> <!-- A tag "blockquote" é uma citação que tem uma quebra de linha e um deslocamento do texto. (referencia a fonte)-->
+
+    <h2>Abreviações</h2>
+
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!.</p> <!-- A tag "abbr" serve pra mostrar o significado da abreviação-->
+
+    <h2>Texto Invertido</h2>
+    
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <!-- A tag "bdo" com dir="rtl" serve pra deixar o texto de trás pra frente-->
+
+
+</body>
+</html>

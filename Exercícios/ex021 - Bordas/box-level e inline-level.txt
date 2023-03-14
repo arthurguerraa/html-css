@@ -1,0 +1,18 @@
+Aninhamento: uma caixa dentro da outra
+
+padding - borda de dentro
+margin - borda de fora
+outline (fora do elemento) - contorno
+
+box-level - sempre se inicia uma linha nova e ocupa a largura
+inteira da tela e pula pra próxima linha pra continuar o conteúdo
+Ex: <div>, <h1> - <h6>, <p>, <main>, <header>, <nav>, <article>,
+<aside>, <footer>, <form>, <video>, etc.
+
+inline-level - sempre se inicia do lado da linha, desenha a caixa
+exatamente do tamanho do conteúdo e depois que termina ele não 
+quebra a linha e continua o conteúdo
+Ex: <span>, <a>, <code>, <small>, <strong>, <em>, <sup> - <sub>,
+<label>, <button>, <input>, <select>, etc.
+
+

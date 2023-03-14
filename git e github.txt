@@ -1,0 +1,11 @@
+Repositório local/remoto
+
+Git é um software que mantém versões de um 
+mesmo projeto (repositório local)
+
+GitHub é um site onde hospeda seus projetos
+(repositório remoto)
+
+
+
+
