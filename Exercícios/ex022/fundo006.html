@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
 
     <style>
         body{
@@ -13,12 +13,21 @@
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover; /*tira as barrinhas pretas do site*/
+            background-attachment: fixed;
+
+            /* Shorthand - background
+                color > image > postion > repeat > [size] > attachment
+
+                background: black url(magens/wallpaper002.jpg) center no-repeat cover fixed
+            */
+
+           
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -30,7 +39,7 @@
 <body>
 
     <main>
-        <h1>
+        <h1>Teste de Imagem de Fundo</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam tempore perspiciatis quae, in ipsa assumenda excepturi minus nam doloribus dolores quo explicabo cupiditate ullam itaque qui voluptatem veniam eveniet laborum.<p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa architecto quod animi similique? Ex maiores distinctio natus, exercitationem a, itaque atque culpa ea nam velit molestiae quaerat, officia tempora consectetur.
             </p>
@@ -40,7 +49,9 @@
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam officia est qui enim laborum deleniti officiis, explicabo magni voluptate, eaque amet molestiae placeat. Similique, a magni! Earum aspernatur nam laborum.
             </p>
-        </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum inventore nostrum error consequuntur voluptatem velit similique explicabo maxime optio officiis excepturi est, saepe, dolorum sapiente sed accusamus, ipsa iste eveniet!
+            </p>
     </main>
     
 </body>
