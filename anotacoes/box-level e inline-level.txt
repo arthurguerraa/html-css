@@ -1,5 +1,0 @@
-box-level sempre se inicia numa linha nova e sempre usa a largura total da tela por padrão e quebra uma linha antes do próximo conteúdo continuar
-ex: <div>
-
-inline-level começa na mesma linha do conteúdo anterior, não ocupa a largura total da tela, somente o necessário e também não quebra linha nem antes nem depois do conteúdo que ele foi inserido
-ex: <span>
