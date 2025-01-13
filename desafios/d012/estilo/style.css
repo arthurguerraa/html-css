@@ -56,6 +56,10 @@ section{
     font-size: 3.5vw; /* a fonte será do tamanho de 10% da largura da viewport fazendo com que ela se adapte de acordo com o tamanho da janela do navegador*/
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
     color: black;
@@ -64,12 +68,26 @@ section.normal{
 section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    /* Efeito Paralax */
+    background-size: cover; /* faz com que uma imagem de fundo seja redimensionada de maneira que cubra completamente o elemento ao qual está aplicada, sem deixar áreas vazias. */
+    background-attachment: fixed; /* faz com que a imagem fique fixa na rolagem de tela*/
 }
 
 section.imagem > p{
     display: inline-block; /* caixa que se adapta ao tamanho do conteúdo*/
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
 
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 footer{
