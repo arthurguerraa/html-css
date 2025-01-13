@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,18 +16,21 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte2);
 }
 
 header > h1{
     padding-top: 50px;
     /*text-transform: uppercase;*/
     font-variant: small-caps;
+    font-size: 10vw; /* a fonte será do tamanho de 10% da largura da viewport fazendo com que ela se adapte de acordo com o tamanho da janela do navegador*/
 }
 
 header > p{
@@ -37,10 +48,12 @@ header a:hover, footer a:hover{
 }
 
 section{
-    padding-top: 10vh;
+    padding-top: 10vh; /* usar vh em vez de px faz com que o padding seja responsivo de acordo com o tamanho da tela*/
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw; /* a fonte será do tamanho de 10% da largura da viewport fazendo com que ela se adapte de acordo com o tamanho da janela do navegador*/
 }
 
 section.normal{
@@ -54,7 +67,7 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    display: inline-block; /* caixa que se adapta ao tamanho do conteúdo*/
     background-color: rgba(0, 0, 0, 0.253);
 
 }
