@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+           height: 97vh;
+           background-image: url(imagens/espaco.jpg);
+           background-position: center center;
+           background-size: cover;
+           background-attachment: fixed;
+        }
+
+        #conteudo{
+            background-image: url(imagens/astronauta.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%; /* 0% totalmente a esquerda, 100% totalmente a direita*/
+            top:  50%; /* 0% totalmente em cima, 100% totalmente embaixo*/
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="conteudo"><img src="imagens/astronauta.png" alt="astronauta"></div>
+    </div>
+</body>
+</html>

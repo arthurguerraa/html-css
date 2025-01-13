@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative; /* todo posicionamento de um box no html é relativo por padrão*/
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute; /* o que você quiser centralizar verticalmente deve ter o posicionamento absoluto*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%; /* 0% totalmente a esquerda, 100% totalmente a direita*/
+            top:  50%; /* 0% totalmente em cima, 100% totalmente embaixo*/
+            transform: translate(-50%, -50%); /* mov vertical esquerda(-) direita(+), mov horizontal cima(-) baixo(+), Muda a posição de referência de 'topo/esquerdo' (padrão), para uma outra qualquer (ex: centro)*/
+            /*margin: auto;  alinhamento horizontal */
+
+          /*
+                OBS: forma mais fácil de centralizar:
+
+                #container {
+                    display: flex; (possui diversas funções, uma delas é habilitar o manejo do conteúdo)
+                    justify-content: center; (alinhamento horizontal, dispensando o 'margin: auto')
+                        align-items: center; (alinhamento vertical)
+                }
+          */  
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo"></article>
+    </section>
+</body>
+</html>
