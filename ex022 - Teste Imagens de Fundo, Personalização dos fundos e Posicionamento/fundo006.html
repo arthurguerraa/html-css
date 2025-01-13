@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
@@ -11,12 +11,20 @@
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /* por padrão é auto, tamanho em px ou % da tela e o cover que faz a imagem ocupar 100% da viewport sem distorce-la (pode cortar algumas partes laterais da imagem)*/
+            background-size: cover; /*cover que faz a imagem ocupar 100% da viewport sem distorce-la (pode cortar algumas partes laterais da imagem), por padrão é auto, tamanho em px ou % da tela*/
+            background-attachment: fixed; /*fixed a imagem fica parada enquanto o conteúdo ta sendo rolado, o padrão é scroll, ou seja a imagem rola junto com o conteúdo, */
+
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment
+                até a época do vídeo o size ainda não funcionava na shorthand
+                background black urk(imagens/wallpaper002.jpg) center center no-repeat cover fixed
+            
+            */
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px; /* largura máxima da viewport*/
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
