@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, magnam id! Voluptate facere iste quidem reiciendis ullam labore earum iusto quaerat et omnis ea, officia nesciunt saepe consequuntur voluptatum vitae?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque error, autem tenetur repellendus ex molestiae repudiandae corrupti eligendi deleniti laboriosam, iusto harum temporibus doloremque natus esse dolores nulla numquam unde.</p>
+
+    <ul>
+        <!-- target="frame" carrega o link dentro do iframe com o name="frame"-->
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil soluta distinctio labore eum reprehenderit, repellendus ipsum maiores laboriosam modi architecto iusto quaerat eos eligendi placeat voluptas rerum quisquam laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, sed aut. Maxime maiores consequatur repellat eum eveniet. Aperiam nobis nisi vero placeat voluptates, at non sequi. Architecto voluptatum pariatur deleniti?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi quis earum sit, dolorum quam tempore, laborum aliquam eos amet exercitationem ipsa, eligendi qui sed minus minima ad maxime ullam.</p><img src='imagens/cursoemvideo.png'>">
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt minus at voluptates dolorum, suscipit numquam laborum veritatis, hic obcaecati nobis delectus praesentium non ea incidunt nemo, soluta neque dolorem accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore officia possimus numquam ad porro doloribus accusantium asperiores voluptas cum non, cumque, exercitationem earum? Debitis voluptas minima vero recusandae velit laborum?</p>
+</body>
+</html>
