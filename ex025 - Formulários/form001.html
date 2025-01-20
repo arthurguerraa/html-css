@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--
+    
+        autocomplete="on/off" - liga ou desliga o autopreenchimento do formulário 
+        action="" - envia os dados do formuláio para um linguagem de programação
+        type="" - tipo do dado que vai ser preenchido na caixa do formulário
+        name="" - mais útil para HTML e PHP
+        id="" - mais úil para Javascript
+        label for="" cria uma relação entre o nome da caixa (objeto) com a caixa em si (etiqueta), ex: Nome: caixa para o nome
+
+        Método GET - é o método padrão do formulário, não esconde os dados da URL (usar para dados que não sensíveis, só pode enviar 3 mil bytes ou 3 mil letras, não pode enviar fotos)
+        Método POST -  esconde os dados da URL, porém ainda é possível ver os dados pelo DevTools em Network > Headers (serve para dados sensíveis, usar o protocolo HTTPS, mais de 3 mil bytes, envio de arquivos)
+    -->
+    <form action="cadastro.php" method="get"  autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
