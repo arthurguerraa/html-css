@@ -21,7 +21,7 @@ header > h1{
     text-align: center;
 }
 
-i#burguer{
+.material-symbols-outlined{
     background-color: rgb(48, 48, 48);
     color: white;
     display: block;
@@ -30,7 +30,7 @@ i#burguer{
     cursor: pointer;
 }
 
-i#burguer:hover{
+.material-symbols-outlined:hover{
     background-color: white;
     color: black;
 }
