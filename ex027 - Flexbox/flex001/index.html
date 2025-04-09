@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+            display: flex;
+
+            flex-direction: row; /* esquerda pra direita em linha, configuração default do display flex*/
+             /* main-axis; esquerda (main start) pra direita (main-end) */
+              /* cross-axis; cima (cross-start) pra baixo (cross-end) */
+
+
+            /* flex-direction: row-reverse; direita pra esquerda */
+             /* main-axis; direita (main end) pra squerda (main-start) */ 
+              /* cross-axis; cima (cross-start) pra baixo (cross-end) */
+
+
+            /* flex-direction: column; um embaixo do outro, de cima pra baixo */ 
+             /* main-axis; cima (main-start) pra baixo (main-end) */
+              /* cross-axis; esquerda (cross-start) pra direita (cross-end)  top */
+              
+
+            /* flex-direction: column-reverse; um embaixo do outro, de baixo pra cima */
+            /* main-axis; de baixo (main end) pra cima (main-start) */
+            /* cross-axis; esquerda (cross-start) pra direita (cross-end) bottom */
+            
+            
+            /* eixos (axis) */
+            /* main-axis; esquerda (main start) pra direita (main-end) */
+            /* cross-axis; esquerda (cross-start) pra baixo (cross-end) */
+        }
+
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto; /* faz os itens se adaptarem ao tamanho do conteiner de forma igual */
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
